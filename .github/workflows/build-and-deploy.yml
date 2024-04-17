@@ -32,6 +32,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: For jacoco report
+        run: mvn clean test  
+
       - name: Generate maven site
         run: mvn site
 
