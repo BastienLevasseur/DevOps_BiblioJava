@@ -6,7 +6,7 @@ import main.java.DataFrame;
 import static org.junit.Assert.*;
 
 /**
- * These tests check if the two DataFrames created differently (with Lists and with CSV) are the same
+ * These tests check if the two DataFrames created differently (with Lists and with CSV) are the same.
  */
 public class TestCSVDataframeIntegration {
 

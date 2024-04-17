@@ -22,6 +22,10 @@ public class CSVParser<IndexType, LabelType> {
     public Vector<Vector<?>> parseCSV(String csvFileName, final char delimiter) throws FileNotFoundException, IllegalArgumentException {
         Scanner csvScanner = new Scanner(new FileInputStream(csvFileName));
 
+        if (! csvScanner.hasNextLine()){
+            throw new IllegalArgumentException("The CSV file is empty");
+        }
+
         Vector<IndexType> indexList = new Vector<>();
         Vector<LabelType> labelList = new Vector<>();
         Vector<Vector<Object>> valueList = new Vector<>();
