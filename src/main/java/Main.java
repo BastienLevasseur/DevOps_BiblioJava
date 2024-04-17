@@ -30,9 +30,15 @@ public class Main {
         System.out.println("Liste des labels : " +label);
         System.out.println("Liste des valeurs: " + values);
 
+        System.out.println("\n*********\n");
+
+        System.out.println("Avec un CSV, en reprennant les listes ci-dessus");
+        System.out.println("\"\"\"");
+        System.out.println(";Colonne1;Colonne2;Colonne3;Colonne4");
+        System.out.println("Ligne1;-1;3.1;Hello World;a");
+        System.out.println("Ligne2;2;4.2;Goodbye World;b");
+        System.out.println("\"\"\"");
         System.out.println("\n*****************\n");
-
-
 
 
         System.out.println("PARTIE AFFICHAGE :\n");
