@@ -4,4 +4,4 @@ COPY *.jar /biblio/
 
 WORKDIR /biblio/
 
-CMD ["java","InittoDelete"]
+CMD ["java","-jar", "*.jar"]
