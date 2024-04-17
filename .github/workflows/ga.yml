@@ -34,15 +34,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Cache Maven  #car cache au dessus n'a pas l'air de fonctionner
-      id: cache-test
-      uses: actions/cache@v3
-      with:
-          path: ~/.m2/test
-          key: ${{ runner.os }}-maventest-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maventest-
-
     - name: Maven test 
       run: mvn clean test #clean et lance les tests
 
@@ -117,14 +108,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cache Maven  
-        id: cache-test
-        uses: actions/cache@v3
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
         with:
-          path: ~/.m2/test
-          key: ${{ runner.os }}-maventest-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maventest-
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+      
+      - name: For jacoco report
+        run: mvn test  
 
       - name: Generate maven site
         run: mvn site
