@@ -89,3 +89,11 @@ Ses différents jobs sont :
 * test-and-coverage : appelle test.yml
 * gh-pages (besoin de test-and-coverage) : idem maven.yml
 * deploy-pages (besoin de test-and-coverage) : idem maven.yml
+
+## Feedback
+
+Nous avons trouvé le projet intéressant et enrichissant : il nous a permis de mettre en oeuvre les techniques et connaissances vu en DevOps tout au long du semestre. Cela nous a permis d'apprendre de nouvelles notions tel que la mise en place d'un Worflow Git ou encore l'utilisation des Pulls Requests pour merge les branches.
+
+Concernant les difficultés, nous avons pris du temps pour mettre en place un Workflow fonctionnel, pour organiser le Git et pour nous organiser entre nous pour le développement 
+
+Nous sommes dans l'ensemble satisfait de notre collaboration et de notre production.
