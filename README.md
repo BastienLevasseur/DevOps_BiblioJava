@@ -24,7 +24,7 @@ Nous fournissons plusieurs fonctionnalités dans notre bibliothèque; ci-dessus 
 Nous fournissons deux méthodes pour créer un nouveau DataFrame :
 
     -DataFrame(List<K> index, List<L> label, List<List<V>> values) : construit un Dataframe à partir de listes d'index, de label et de liste de valeurs.
-    -TO DO DATAFRAME CSV
+    -DataFrame(String filename, char delimmiter) : construit un Dataframe à partir d'un nom fichier CSV et de son délimiteur.
 
 * Affichage d'un dataFrame
 
