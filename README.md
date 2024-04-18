@@ -18,7 +18,7 @@ Le but de ce projet est de fournir en Java une partie des fonctionnalités offer
 Nous fournissons plusieurs fonctionnalités dans notre bibliothèque; ci-dessus la liste de ces fonctionnalités.
 
 * Création d'un dataFrame
-* 
+
 Nous fournissons deux méthodes pour créer un nouveau DataFrame :
 
     -DataFrame(List<K> index, List<L> label, List<List<V>> values) : construit un Dataframe à partir de listes d'index, de label et de liste de valeurs.
@@ -65,7 +65,7 @@ La méthode suivante s'applique à toutes les colonnes
 
 Comme indiqué dans l'introduction, nous avons développé notre bibliothèque en Java et utilisé la version 4 de JUnit
 pour les tests unitaires. Nous avons également utilisé Maven afin de construire les différentes phases de notre projet
-ainsi que Jacoco pour l'évaluation de la couverture du code.
+ainsi que Jacoco pour l'évaluation de la couverture du code. Nous avons une documentation [ici](https://elsabn.github.io/DevOps_BiblioJava/) et une image Docker : *ghcr.io/elsabn/devops_bibliojava-ghcr:latest*
 
 ## Description du workflow Git
 
